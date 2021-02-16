@@ -5,4 +5,5 @@ RUN apt update \
  && apt-add-repository ppa:ansible/ansible -y \
  && apt update \
  && apt install -y python-pip python3-pip \
- && pip3 install ansible
+ && pip3 install ansible \
+ && rm -rf /var/lib/apt/lists/*
